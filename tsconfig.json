@@ -1,6 +1,10 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
+    "types": [
+      "nativewind/types",
+      "react-native-svg" // Ensure this is here for correct SVG typing
+    ],
     "strict": true,
     "paths": {
       "@/*": [
