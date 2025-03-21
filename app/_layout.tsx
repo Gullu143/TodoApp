@@ -10,12 +10,15 @@ export default function RootLayout() {
     "lexenda-semiBold": require("../assets/fonts/LexendDeca-SemiBold.ttf"),
     "lexenda-bold": require("../assets/fonts/LexendDeca-Bold.ttf"),
   });
+
   if (!fontsLoaded) {
     return <ActivityIndicator size="large" color="#0000ff" />;
   }
+
   return (
     <Stack screenOptions={{ headerShown: false }}>
       <Stack.Screen name="index" />
+      <Stack.Screen name="(user)" />
     </Stack>
   );
 }
