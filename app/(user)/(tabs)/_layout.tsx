@@ -23,7 +23,7 @@ export default function TabsLayout() {
         }}
       />
       <Tabs.Screen
-        name="add"
+        name="addProject"
         options={{
           tabBarIcon: ({ color, size }) => (
             <Feather name="plus-square" size={size} color={color} />
